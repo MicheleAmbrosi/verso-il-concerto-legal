@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti – Verso il Concerto</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+    .lang-menu { text-align: right; margin-bottom: 20px; }
+    .lang-btn { cursor: pointer; font-weight: bold; margin-left: 10px; }
+    section { display: none; }
+    section.active { display: block; }
+    h1 { border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+  </style>
+</head>
+<body>
+
+  <div class="lang-menu">
+    <span class="lang-btn" onclick="showLang('it')">🇮🇹 Italiano</span> |
+    <span class="lang-btn" onclick="showLang('en')">🇬🇧 English</span>
+  </div>
+
+  <!-- Italiano -->
+  <section id="it" class="active">
+    <h1>Contatti – Verso il Concerto</h1>
+    <p><strong>Email supporto:</strong> <a href="mailto:info@versoilconcerto.com">info@versoilconcerto.com</a></p>
+  </section>
+
+  <!-- English -->
+  <section id="en">
+    <h1>Contact – Verso il Concerto</h1>
+    <p><strong>Support email:</strong> <a href="mailto:info@versoilconcerto.com">info@versoilconcerto.com</a></p>
+  </section>
+
+  <script>
+    function showLang(lang) {
+      document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+      document.getElementById(lang).classList.add("active");
+    }
+  </script>
+
+</body>
+</html>

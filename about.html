@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi siamo – Verso il Concerto</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+    .lang-menu { text-align: right; margin-bottom: 20px; }
+    .lang-btn { cursor: pointer; font-weight: bold; margin-left: 10px; }
+    section { display: none; }
+    section.active { display: block; }
+    h1 { border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+  </style>
+</head>
+<body>
+
+  <div class="lang-menu">
+    <span class="lang-btn" onclick="showLang('it')">🇮🇹 Italiano</span> |
+    <span class="lang-btn" onclick="showLang('en')">🇬🇧 English</span>
+  </div>
+
+  <!-- Italiano -->
+  <section id="it" class="active">
+    <h1>Chi siamo – Verso il Concerto</h1>
+    <p><em>Verso il Concerto</em> è un’app pensata per accompagnare studenti e insegnanti di musica
+    nella fase di preparazione a una performance: i mesi che precedono un saggio, un concerto o un esame.</p>
+
+    <p>Sviluppata e curata da <strong>Michele Ambrosi</strong>, insegnante di musica,
+    l’app nasce dall’esigenza di dare maggiore continuità e chiarezza a un lavoro che tradizionalmente
+    veniva seguito su un quaderno cartaceo. Quel metodo, pur valido, presentava alcuni limiti:
+    se il quaderno veniva dimenticato, se una lezione saltava o se la famiglia non lo consultava,
+    il filo della preparazione rischiava di interrompersi facilmente.</p>
+
+    <p><em>Verso il Concerto</em> trasferisce questo approccio in formato digitale, mantenendo la semplicità
+    dello strumento ma con il vantaggio di essere sempre disponibile e consultabile anche dalle famiglie,
+    che così possono seguire passo dopo passo i progressi.</p>
+
+    <p>La struttura dell’app è volutamente essenziale e mirata: uno strumento leggero, immediato e focalizzato
+    sulla preparazione alla performance. Non richiede registrazioni da parte degli studenti né costi per le famiglie,
+    e si distingue da gestionali più complessi offrendo solo le funzioni considerate dall’autore realmente utili
+    in questa fase del percorso musicale.</p>
+
+    <p>L’app risponde anche a un’altra necessità della pratica quotidiana: condividere brevi registrazioni audio degli esercizi.
+    Invece di ricorrere ad app di messaggistica, poco adatte e facilmente dispersive, <em>Verso il Concerto</em> offre
+    uno spazio dedicato con archiviazione temporanea di 30 giorni, sufficiente per il lavoro didattico senza creare accumuli inutili.
+    Ogni registrazione è inoltre collegata all’attività o all’obiettivo fissato dall’insegnante, così da poter essere facilmente
+    individuata e ascoltata nel giusto contesto.</p>
+  </section>
+
+  <!-- English -->
+  <section id="en">
+    <h1>About – Verso il Concerto</h1>
+    <p><em>Verso il Concerto</em> is an app designed to support music students and teachers
+    in preparing for a performance — the crucial months leading up to a recital, concert, or exam.</p>
+
+    <p>Developed and maintained by <strong>Michele Ambrosi</strong>, music teacher,
+    the app was created to give greater continuity and clarity to a process that has traditionally
+    been tracked in paper notebooks. While useful, that method had clear limitations:
+    if the notebook was forgotten, if a lesson was missed, or if the family did not follow it,
+    the continuity of preparation was easily lost.</p>
+
+    <p><em>Verso il Concerto</em> brings this approach into a digital format, keeping the simplicity
+    of the original tool while adding the advantage of being always accessible and shareable with families,
+    who can follow the student’s progress step by step.</p>
+
+    <p>The design of the app is intentionally simple and focused: a lightweight, intuitive tool dedicated
+    specifically to performance preparation. It requires no registration or payments from students or families,
+    and it stands apart from more complex management systems by offering only the features the author considers
+    truly useful for this stage of the musical journey.</p>
+
+    <p>The app also addresses another recurring need in teaching practice: sharing short audio recordings of exercises.
+    Instead of relying on messaging apps — not designed for this purpose and often dispersive — <em>Verso il Concerto</em>
+    provides a dedicated space with temporary storage (30 days), sufficient for teaching purposes without unnecessary accumulation.
+    Each recording is also linked to the specific task or goal set by the teacher, making it easy to locate and listen
+    in the right context.</p>
+  </section>
+
+  <script>
+    function showLang(lang) {
+      document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+      document.getElementById(lang).classList.add("active");
+    }
+  </script>
+
+</body>
+</html>

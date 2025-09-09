@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termini di Servizio – Verso il Concerto</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+    .lang-menu { text-align: right; margin-bottom: 20px; }
+    .lang-btn { cursor: pointer; font-weight: bold; margin-left: 10px; }
+    section { display: none; }
+    section.active { display: block; }
+    h1 { border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+  </style>
+</head>
+<body>
+
+  <div class="lang-menu">
+    <span class="lang-btn" onclick="showLang('it')">🇮🇹 Italiano</span> |
+    <span class="lang-btn" onclick="showLang('en')">🇬🇧 English</span>
+  </div>
+
+  <!-- Italiano -->
+  <section id="it" class="active">
+    <h1>Termini di Servizio – Verso il Concerto</h1>
+    <p><strong>Ultimo aggiornamento:</strong> 9 settembre 2025</p>
+
+    <h2>1. Accettazione dei termini</h2>
+    <p>Utilizzando l’app <em>Verso il Concerto</em>, l’utente accetta i presenti Termini di Servizio.</p>
+
+    <h2>2. Oggetto del servizio</h2>
+    <p>L’app supporta studenti e insegnanti nella gestione di progetti musicali, tappe di studio e registrazioni audio.</p>
+
+    <h2>3. Registrazione e account</h2>
+    <p>L’utente garantisce la correttezza delle informazioni fornite ed è responsabile dell’uso del proprio account.</p>
+
+    <h2>4. Periodo di prova e pagamenti</h2>
+    <p>L’app offre 60 giorni gratuiti. Per continuare a utilizzare le funzioni principali è richiesto un <strong>pagamento unico</strong> tramite App Store o Play Store. 
+    Non sono previsti ulteriori costi o abbonamenti ricorrenti.</p>
+
+    <h2>5. Uso consentito</h2>
+    <p>L’app deve essere utilizzata solo per scopi didattici e personali. È vietato l’uso improprio (contenuti illegali, offensivi, utilizzo come chat, ecc.).</p>
+
+    <h2>6. Limitazioni di responsabilità</h2>
+    <p>L’app è fornita “così com’è”, senza garanzia di disponibilità continua. Non siamo responsabili di danni derivanti da uso improprio.</p>
+
+    <h2>7. Pubblicità</h2>
+    <p>L’app non usa pubblicità basata su profilazione. Potrebbero essere inseriti in futuro <em>banner informativi non personalizzati</em> relativi al settore musicale.</p>
+
+    <h2>8. Cessazione del servizio</h2>
+    <p>L’utente può richiedere la cancellazione del proprio account scrivendo a <strong>info@versoilconcerto.com</strong>. 
+    Ci riserviamo il diritto di sospendere account in caso di abusi.</p>
+
+    <h2>9. Modifiche</h2>
+    <p>I Termini potranno essere aggiornati. In caso di modifiche rilevanti, verrà data comunicazione nell’app o via email.</p>
+
+    <h2>10. Contatti</h2>
+    <p>Per domande: <strong>info@versoilconcerto.com</strong></p>
+  </section>
+
+  <!-- English -->
+  <section id="en">
+    <h1>Terms of Service – Verso il Concerto</h1>
+    <p><strong>Last update:</strong> September 9, 2025</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>By using the app <em>Verso il Concerto</em>, you agree to these Terms of Service.</p>
+
+    <h2>2. Purpose of the Service</h2>
+    <p>The app supports students and teachers in managing music projects, study milestones, and short audio recordings.</p>
+
+    <h2>3. Registration and Account</h2>
+    <p>Users must provide accurate information and are responsible for the use of their accounts.</p>
+
+    <h2>4. Free Trial and Payments</h2>
+    <p>The app offers a 60-day free trial. To continue using the main features, a <strong>one-time payment</strong> via App Store or Play Store is required. 
+    No further costs, subscriptions, or renewals apply.</p>
+
+    <h2>5. Permitted Use</h2>
+    <p>The app may only be used for educational and personal purposes. Any misuse (illegal content, offensive material, messaging unrelated to learning) is prohibited.</p>
+
+    <h2>6. Limitation of Liability</h2>
+    <p>The app is provided “as is”, without guarantee of uninterrupted availability. The developer is not liable for damages resulting from improper use.</p>
+
+    <h2>7. Advertising</h2>
+    <p>The app does not use profiling-based ads. In the future, <em>non-personalized informational banners</em> related to the music sector may appear.</p>
+
+    <h2>8. Termination</h2>
+    <p>Users may request deletion of their account by writing to <strong>info@versoilconcerto.com</strong>. 
+    The developer may suspend or terminate accounts in case of abuse.</p>
+
+    <h2>9. Changes</h2>
+    <p>These Terms may be updated. In case of significant changes, notice will be provided within the app or via email.</p>
+
+    <h2>10. Contact</h2>
+    <p>For questions: <strong>info@versoilconcerto.com</strong></p>
+  </section>
+
+  <script>
+    function showLang(lang) {
+      document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+      document.getElementById(lang).classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
